@@ -32,7 +32,7 @@
   #define BOARD_NAME "Sanguinololu <1.2"
 #endif
 
-#define IS_MELZI (MB(MELZI) || MB(MELZI_MAKR3D))
+#define IS_MELZI (MB(MELZI) || MB(MELZI_MAKR3D) || MB(ANET_10))
 
 //
 // Limit Switches
@@ -188,6 +188,10 @@
 
   #define SD_DETECT_PIN         -1
 
+  #if ENABLED(ADC_KEYPAD)
+    #define ADC_KEYPAD_PIN       1
+  #endif
+
 #elif ENABLED(MAKRPANEL)
 
   #define BEEPER_PIN            29
@@ -211,3 +215,4 @@
   #define SD_DETECT_PIN         -1
 
 #endif // MAKRPANEL
+
