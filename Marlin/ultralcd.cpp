@@ -1280,15 +1280,8 @@ KeepDrawing:
     }
 
     inline void lcd_wait_for_homing() {
-      #if ENABLED(MANUAL_BED_LEVELING)
-        if (axis_homed[X_AXIS] && axis_homed[Y_AXIS] && axis_homed[Z_AXIS])
-          lcd_goto_screen(_lcd_level_bed_homing_done);
-      #else
-        if (no_reentrance) return;
-        while (!axis_homed[X_AXIS] || !axis_homed[Y_AXIS] || !axis_homed[Z_AXIS]) idle();
-        no_reentrance = true;
+      if (axis_homed[X_AXIS] && axis_homed[Y_AXIS] && axis_homed[Z_AXIS])
         lcd_goto_screen(_lcd_level_bed_homing_done);
-      #endif
     }
 
     /**
