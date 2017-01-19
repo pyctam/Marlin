@@ -735,11 +735,11 @@
 
 // Travel limits after homing (units are in mm)
 #define X_MAX_POS     220
-#define X_MIN_POS     -33
+#define X_MIN_POS     0
 #define Y_MAX_POS     220
-#define Y_MIN_POS     -10
-#define Z_MAX_POS     240
-#define Z_MIN_POS   0
+#define Y_MIN_POS     0
+#define Z_MAX_POS     250
+#define Z_MIN_POS     0
 
 /**
  * Filament Runout Sensor
@@ -827,10 +827,10 @@
   #define ABL_GRID_MAX_POINTS_Y ABL_GRID_MAX_POINTS_X
 
   // Set the boundaries for probing (where the probe can reach).
-  #define LEFT_PROBE_BED_POSITION 15
-  #define RIGHT_PROBE_BED_POSITION 190
-  #define FRONT_PROBE_BED_POSITION 15
-  #define BACK_PROBE_BED_POSITION 170
+    #define LEFT_PROBE_BED_POSITION   30
+    #define RIGHT_PROBE_BED_POSITION  190
+    #define BACK_PROBE_BED_POSITION   190
+    #define FRONT_PROBE_BED_POSITION  30
 
   // The Z probe minimum outer margin (to validate G29 parameters).
   #define MIN_PROBE_EDGE 10
