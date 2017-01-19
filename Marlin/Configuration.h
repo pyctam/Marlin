@@ -1119,8 +1119,8 @@
 //#define ULTRA_LCD   // Character based
 //#define DOGLCD      // Full graphics display
 
-#define ANET_KEYPAD_LCD
-//#define ANET_FULL_GRAPHICS_LCD
+//#define ANET_KEYPAD_LCD
+#define ANET_FULL_GRAPHICS_LCD
 
 //
 // SD CARD
