@@ -520,10 +520,10 @@
  *   M204 P    Acceleration
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
- */
-#define DEFAULT_ACCELERATION          1000 //Original Anet V2.00 settings for Anet A6
-#define DEFAULT_RETRACT_ACCELERATION  1000 //Original Anet V2.00 settings for Anet A6
-#define DEFAULT_TRAVEL_ACCELERATION   1000 //Original Anet V2.00 settings for Anet A6
+ */ 
+#define DEFAULT_ACCELERATION          1000 // (Original Anet V2.00 settings for Anet A6) X, Y, Z and E acceleration for printing moves 
+#define DEFAULT_RETRACT_ACCELERATION  1000 // (Original Anet V2.00 settings for Anet A6) E acceleration for retracts
+#define DEFAULT_TRAVEL_ACCELERATION   1000 // (Original Anet V2.00 settings for Anet A6) X, Y, Z acceleration for travel (non printing) moves
 
 /**
  * Default Jerk (mm/s)
