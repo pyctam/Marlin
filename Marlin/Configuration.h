@@ -497,7 +497,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {98.42519685, 97.943192948, 400, 95} //Original Anet V2.00 settings for Anet A6
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {100, 100, 400, 95} //Original Anet V2.00 settings for Anet A6
 
 /**
  * Default Max Feed Rate (mm/s)
